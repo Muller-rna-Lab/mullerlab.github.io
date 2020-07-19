@@ -1,0 +1,677 @@
+h1 {
+color: #808080;
+text-align: center;
+font-family: "Verdana", Geneva, sans-serif;
+margin-left: 180px;
+}
+
+
+
+
+
+body {
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0);
+
+
+}
+
+/*
+footer {
+	  position: relative;
+  left: 0;
+  bottom: 0; 
+  width: 100%;
+  /*background-color: #808080;
+  color: black;
+  text-align: center;
+  height: 50px;
+  font-family: "Verdana", Geneva, sans-serif;
+*/
+
+#main {
+	font-family: "Verdana", Geneva, sans-serif;
+	margin-left: 260px;
+	margin-bottom: 80px;
+	background-color: rgba(255, 255, 255, 0);
+	height: 100vh;
+
+
+
+/*min-height: 100%;
+	bottom: 0;
+	*/
+	/*height: 110%;*/
+	
+	
+}
+
+#gradientbkrd1 {
+  height: 100%;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, white, gray);  /* Standard syntax (must be last) */
+
+  /*background-image: Navy;  */
+}
+
+
+#bottommargin {
+	background-color: rgba(255, 255, 255, 0);
+	/*height: 100vh;*/
+	
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0px; 
+  width: 100%;
+  /*background-color: #f2f2f2;*/
+  /*background-color: #00FFFFFF;*/
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  text-align: right;
+  font-family: "Verdana", Geneva, sans-serif;
+  clear: both;
+  height: 40px;
+ 
+  /*margin-top: 0px;*/
+  /*margin-left: 260px;*/
+  
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+ /* Fixed sidenav, full height */
+#sidenav {
+  /*height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;*/
+    font-family: "Verdana", Geneva, sans-serif;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0);
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  color: #f1f1f1;
+}
+
+/* Style the sidenav links and the dropdown button */
+#sidenav a, .dropdown-btn {
+  /*padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;*/
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #818181;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* On mouse-over */
+#sidenav a:hover, .dropdown-btn:hover {
+  /*color: #f1f1f1;*/
+	color: #818181;
+}
+
+/* Main content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 22px; /* Increased text to enable scrolling */
+  /*padding: 0px 10px;*/
+}
+
+
+/*additional classes to try and differentiate dropdown text size, HQ*/
+
+/*
+.drptxt {
+padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  font-size: 18px
+}
+.mntxt {
+padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  font-size: 22px
+}*/
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: inherit;
+  /*background: #818181;*/
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: inherit;
+  padding-left: 12px;
+  font-size:18px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  background-color: inherit;
+  /*padding-right: 8px;*/
+} 
+	
+/*----------------------------------------------------------------------------------*/
+
+//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+/*
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+*/
+<script src="myscripts.js"></script>
+/*-------------------------------------------------------------------------------------*/
+/*home page menu buttons*/
+/*
+a { 
+  
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  }
+
+.block {
+  display: inline-block;
+  width: 15vh;
+  height: 15vh;
+
+  padding: 5vh 5px;
+  font-size: 16px;
+  cursor: pointer;
+  	text-align: center;
+
+	
+
+
+}
+
+.button1 {
+	background-image: url(C:\Users\hkqur\OneDrive\web\muller_website\m2_2020\images\website material\homepage\4D_MIP.png);
+    background-size: 100px 130px;
+
+}
+
+.tile_div a {
+	display: block;
+	position: absolute;
+	
+    float: center;
+	text-align: center;
+	margin-right: 5px;
+    text-decoration: none;
+	clear: both;
+}
+
+
+
+.button_divider{
+    width:2hh;
+    height:auto;
+    display:inline-block;
+
+}
+
+.button_div_divider{
+    width:auto;
+    height:2vh;
+    display:inline-block;
+
+
+}
+.horizontal-center {
+	display:inline-block;
+	position: relative;
+	
+
+  margin: 0;  
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+min-height: 150px;
+
+}
+*/
+/*--------------------------------------------------------------*/
+
+
+ /*home page formatting styles */
+/*#text_body {
+	position: relative;
+	left: 40px;
+	right: 40px;
+}*/
+
+
+/* lab members page formatting styles */
+#right {
+	float: right;
+}
+
+.indent_h2 {
+	position: relative;
+	left: 15px;
+}
+
+
+/*image formatting*/
+.lightsheet {
+	/* background: black url(images\lightsheet_1b.jpg) center no-repeat; */
+  
+  width: 100%;
+  position: relative;
+  /*left: 50%;
+  right: 50%;
+  /*margin-left: -50vw;*/
+  margin-right: -50vw; 
+}
+
+/* ---------------------------------IMAGE SLIDESHOW FOR MUELLER LAB HOMEPAGE ----------------------------------- */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px;
+  position: relative;
+  margin: auto; */
+  
+    width: 100%;
+  position: relative;
+  margin-right: -50vw;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.captext {
+	color: #d8d8d8;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+
+.captextM {
+	color: #d8d8d8;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+
+/* ------------------------------------------------end slideshow CSS-------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------lab members-------------------------------------------------- */
+.imgsize {
+	/*height: 200px;*/
+  width: 80%;
+  /* background-color: powderblue; */
+}
+
+.labtxt {
+	position: relative;
+	left: 15px;
+	/* margin-left:150px; */
+}
+
+
+
+.leftimg {
+	position: relative;
+	padding:1px;
+	border:1px solid #021a40;
+	background-color: #ff0;
+	float: left;
+	top: 0;
+	left: 0px;
+	width: 150px;
+	height: 150px;
+	
+}
+
+.publist {
+	position: relative;
+	width:75% ;
+	/*background-color: powderblue;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.midimg {
+	position: relative;
+	display: block;
+	height: 200px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* =========================================contact==================================================== */
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #00A1D4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #00C1FF;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+
+} 
+
+
+	/*===================================================================*/
+/*events*/
+.subh {
+	padding-left: 50px;
+	
+}
+/*DANIOCODE */
+.imgtopright /*daniocode logo positioning*/
+{
+	background-image: url("images/daniocode_logo_long_edit2.svg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size:240px;
+	}
+
+/*Results page image-video positioning*/	
+	
+.res_ban {
+  float: left;
+ 
+  padding: 5px;
+}
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.lft-flt {
+	float: left;
+margin-right: 15px;
+margin-top: 5px;
+margin-bottom: 10px;
+margin-left: 5px; /* These margin defintions ensure that the Text does not seat too close to image */
+border: 1px solid black;
+padding: 3px;
+}
+
+.mi-img {
+	position: relative;
+	display: block;
+	height: 320px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+	/*contact page CSS*/
+.visuallyhidden /*hiding the input box clipboard source*/
+{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+#chimage /*contact details image parameters*/
+{
+	position: relative;
+	float: center;
+	width: 40%;
+}
+
+.button  /* clipboard button design*/
+{
+  background-color: #46C5BF;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.smallpic {
+	position: fixed;
+	float: center;
+	width: 500px;
+	
+}
+
+.indenta {
+	padding-left: 170px;
+}
+
+/*fade in code!!!!!!!! * keep at bottom as it messes up css when I place it elsewhere*/ 
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
+/*---------------------*/
+
