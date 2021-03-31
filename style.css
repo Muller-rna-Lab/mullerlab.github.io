@@ -12,10 +12,19 @@ margin-left: 180px;
 body {
 	height: 100vh;
 	background-color: rgba(255, 255, 255, 0);
+	/*color: white;*/
 
 
 }
 
+
+body2 {
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0);
+	color:white;
+
+
+}
 /*
 footer {
 	  position: relative;
@@ -46,10 +55,19 @@ footer {
 	
 }
 
+#gradientbkrd2{
+  height: 100%;
+  background-color: black; /* For browsers that do not support gradients */
+  /*background-image: linear-gradient(to bottom right, white, whitesmoke);  /* Standard syntax (must be last) */
+
+  /*background-image: Navy;  */
+}
+
+
 #gradientbkrd1 {
   height: 100%;
   background-color: white; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, white, gray);  /* Standard syntax (must be last) */
+  background-image: linear-gradient(to bottom right, white, whitesmoke);  /* Standard syntax (must be last) */
 
   /*background-image: Navy;  */
 }
@@ -446,9 +464,13 @@ min-height: 150px;
 /* ------------------------------------------------lab members-------------------------------------------------- */
 .imgsize {
 	/*height: 200px;*/
-  width: 80%;
+  width: 100%;
+  float: left;
   /* background-color: powderblue; */
 }
+
+
+
 
 .labtxt {
 	position: relative;
@@ -487,7 +509,59 @@ min-height: 150px;
 	margin-left: auto;
 	margin-right: auto;
 }
+/*===========================================RESOURCES==================================================*/
 
+.imgsize_res {
+	/*height: 200px;*/
+  height: 20%;
+  
+  /* background-color: powderblue; */
+}
+
+.imgsizeL {
+	/*height: 200px;*/
+  width: 100%;
+  float: left;
+  	margin-top:1.5%;
+	margin-bottom: 1.5%;
+	    background-color: white;
+    display: inline-block;
+	background-color: transparent;
+  /* background-color: powderblue; */
+}
+
+.imgsizeR {
+	/*height: 200px;*/
+	width:100%;
+	float:right;
+	margin-top:1.5%;
+	margin-bottom: 1.5%;
+	    background-color: white;
+    display: inline-block;
+	background-color: transparent;
+  /* background-color: powderblue; */
+}
+
+.alignright {
+	float:right;
+}
+
+.brightness {
+    background-color: white;
+    display: inline-block;
+
+}
+.brightness img:hover {
+    opacity: .5;
+}
+
+.imgsizeL img:hover {
+    opacity: .5;
+}
+
+.imgsizeR img:hover {
+    opacity: .5;
+}
 /* =========================================contact==================================================== */
 
  /* Style inputs with type="text", select elements and textareas */
