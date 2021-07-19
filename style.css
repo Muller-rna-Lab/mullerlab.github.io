@@ -498,6 +498,24 @@ min-height: 150px;
 	
 }
 
+.leftimgRES {
+	position: relative;
+	padding:1px;
+	border:1px solid #021a40;
+	/*border-radius: 50%;*/
+	/*background-color: #ff0;*/
+	float: left;
+	top: 0;
+	left: 0px;
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	
+}
+
+
+
+
 .publist {
 	position: relative;
 	width:75% ;
