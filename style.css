@@ -466,6 +466,8 @@ min-height: 150px;
 	/*height: 200px;*/
   width: 100%;
   float: left;
+  position: inline-block;
+  padding: 10px 25px;
   /* background-color: powderblue; */
 }
 
@@ -475,6 +477,8 @@ min-height: 150px;
 .labtxt {
 	position: relative;
 	left: 15px;
+	background-color: transparent;
+	border-style: none;
 	/* margin-left:150px; */
 }
 
@@ -484,7 +488,8 @@ min-height: 150px;
 	position: relative;
 	padding:1px;
 	border:1px solid #021a40;
-	background-color: #ff0;
+	/*border-radius: 50%;*/
+	/*background-color: #ff0;*/
 	float: left;
 	top: 0;
 	left: 0px;
@@ -492,6 +497,24 @@ min-height: 150px;
 	height: 150px;
 	
 }
+
+.leftimgRES {
+	position: relative;
+	padding:1px;
+	border:1px solid #021a40;
+	/*border-radius: 50%;*/
+	/*background-color: #ff0;*/
+	float: left;
+	top: 0;
+	left: 0px;
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	
+}
+
+
+
 
 .publist {
 	position: relative;
@@ -509,6 +532,115 @@ min-height: 150px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.imgheight- {
+	
+	
+	
+	
+}
+/*popup boxes for lab members=====================================================================*/
+
+
+
+.read-more-state {
+  display: none;
+  
+  
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+  
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  
+  
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show description';
+  
+  
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+  
+  
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  margin-left: 10px;
+}
+
+/* Other style */ 
+body {
+  padding: 2%;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*
+p {
+  padding: 2%;
+  background: #fff9c6;
+  color: #c7b27e;
+  border: 1px solid #fce29f;
+  border-radius: .25em;
+}
+*/
+
+/*SOCIALS*/
+ /* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
+
+/* Twitter */
+.fa-scholar:after {
+	content:url("\images\website material\scholar.jpg");
+  background: #55ACEE;
+  color: white;
+} 
+
 /*===========================================RESOURCES==================================================*/
 
 .imgsize_res {
