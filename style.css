@@ -7,6 +7,118 @@ margin-left: 180px;
 
 
 
+/*##########*/
+/*lab members page styling*/
+h3 {
+display: inline-block;
+margin-left: 10px;
+margin-right: 10px;
+}
+	
+.indent_h2b {
+	position: relative;
+	left: 15px;
+	color: blue;
+	/*border-style: solid;
+	
+	border-radius: 7px;*/
+}
+
+.indent_h2b a:link{
+	text-decoration: none;
+	
+}
+	
+.indent_h2b:hover {
+	opacity:0.5;
+	
+}	
+
+.a2 {
+	margin-top:1px;
+	
+}
+
+.former_mem_inf {
+	display:inline-block;
+	/*float: right;*/
+	height: 30px;
+	width: 30px;
+	margin-left: 30px;
+margin-right: 30px;
+}
+
+._mem_inf {
+	display:inline-block;
+	/*float: right;*/
+	height: 30px;
+	width: 30px;
+
+}
+
+.former_mem_inf:hover{
+	
+	opacity:0.7;
+	
+}
+
+._mem_inf:hover{	
+	opacity:0.7;	
+}
+
+
+.containerA {
+	position: relative;
+}
+
+/*##########*/
+/*Resources styling*/
+
+#centred_ {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.imgsizeb {
+	/*height: 200px;*/
+  width: 100%;
+  float: left;
+  position: inline-block;
+  padding: 10px 25px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 2px;
+  transition: border 1s;
+  /* background-color: powderblue; */
+}
+
+.imgsizeb:hover {
+	
+	border-color:gray;
+	
+}
+/*
+
+.h2_pad {
+	border: 25px solid transparent;
+	
+	border-color: transparent;
+	display:block;
+	
+}
+
+.spacer_line {
+		border: 25px solid transparent;
+	
+	border-color: red;
+	display:block;
+padding = 50px;
+	
+}
+*/
+
+/*##########*/
+
 
 
 body {
@@ -514,6 +626,14 @@ min-height: 150px;
 }
 
 
+.leftimgRES:hover {
+	opacity:0.5;
+	
+}
+
+
+
+
 
 
 .publist {
@@ -674,8 +794,20 @@ p {
   /* background-color: powderblue; */
 }
 
-.alignright {
+.alignrightbold {
 	float:right;
+	text-align:right;
+	font-weight:bold;
+
+}
+
+.alignright {
+	text-align:right;
+	
+	
+
+}
+
 }
 
 .brightness {
