@@ -828,15 +828,36 @@ p {
 	float:right;
 	text-align:right;
 	font-weight:bold;
+	display: inline;
+	width: auto;
+	
 
 }
 
 .alignright {
 	text-align:right;
+	/*display: inline;*/
+	
+	
 	
 	
 
 }
+
+.alignrightSUB {
+	
+	text-align:right;
+	
+	width: auto;
+
+
+	
+	
+	
+	
+
+}
+
 
 }
 
